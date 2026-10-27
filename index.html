@@ -1,95 +1,387 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f9e9ed">
-<title>For BabyJennie ♡ | A Birthday Love Story</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f9e9ed">
+  <title>For BabyJennie ♡ | A Birthday Love Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="glow glow-one"></div><div class="glow glow-two"></div>
-<header><span class="brand">J ♡ J</span><span id="progressLabel">A little surprise • 1 / 7</span><button class="iconbtn" id="soundBtn" aria-label="Music options" title="Music options">♫</button></header>
-<div class="progress"><div id="progressBar"></div></div>
-<main id="main">
-<section class="chapter active" data-title="A little surprise">
- <div class="eyebrow">A LETTER MADE WITH LOVE</div><div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the envelope"><span>♡</span></div>
- <h1>To my <em>BabyJennie</em></h1>
- <p>Jennifer Chin Yee Lim, this year I wanted to do something different. Not just a long birthday message, but a little journey through everything you mean to me.</p>
- <p class="muted">Take your time, Baby. Every page was made for you.</p>
- <button class="primary next">Open your surprise <span>→</span></button>
-</section>
-<section class="chapter" data-title="Where it began">
- <div class="eyebrow">CHAPTER ONE</div><h2>Our story started <em>long ago.</em></h2>
- <div class="photo large" data-photo="photos/school.jpg"><span>♡</span><small>Our secondary school days<br><b>Add a photo: photos/school.jpg</b></small></div>
- <p>We have known each other since secondary school. Back then, I couldn't have imagined how much of my world you would become.</p>
- <p>From school days to university life, we kept growing, learning, and finding our way — together. And if I could choose where our story began, I'd still choose the path that led me to you.</p>
- <button class="primary next">Keep walking with me →</button>
-</section>
-<section class="chapter" data-title="Our memories">
- <div class="eyebrow">CHAPTER TWO</div><h2>6 years, 8 months.<br><em>Countless little moments.</em></h2>
- <p>Some memories are big. Others are just ordinary days that became special because you were there.</p>
- <div class="gallery">
-  <button class="photo" data-photo="photos/memory1.jpg" data-caption="Every laugh with you is a favourite memory."><span>01</span><small>Our laughter</small></button>
-  <button class="photo" data-photo="photos/memory2.jpg" data-caption="University felt more meaningful because we walked through it together."><span>02</span><small>University days</small></button>
-  <button class="photo" data-photo="photos/memory3.jpg" data-caption="Even the simplest moments are beautiful with you."><span>03</span><small>Little adventures</small></button>
-  <button class="photo" data-photo="photos/memory4.jpg" data-caption="My favourite place is wherever we get to make memories together."><span>04</span><small>Us, always</small></button>
- </div><p class="muted">Tap a memory to read a note.</p><button class="primary next">There's more I want to say →</button>
-</section>
-<section class="chapter" data-title="Why you">
- <div class="eyebrow">CHAPTER THREE</div><h2>All the little reasons<br><em>I love you.</em></h2>
- <p>Tap every heart, BabyJennie. Each one is something I never want you to forget.</p>
- <div class="hearts" id="hearts"></div><div class="reveal" id="heartMessage" aria-live="polite">A little love note is waiting for you ♡</div>
- <button class="primary next">One thing I want you to know →</button>
-</section>
-<section class="chapter" data-title="Through everything">
- <div class="eyebrow">CHAPTER FOUR</div><h2>Not just on the <em>easy days.</em></h2>
- <div class="quote">“Love is not only about the beautiful moments. It's also about choosing each other when life gets difficult.”</div>
- <p>We've been through good times and bad times. We haven't always had easy days, but through it all, we have had each other.</p>
- <p>Thank you for being by my side, for growing with me, and for being part of the person I am becoming. I want to keep showing up for you, listening to you, and building something lasting with you.</p>
- <div class="photo wide" data-photo="photos/together.jpg"><span>∞</span><small>Still choosing us<br><b>photos/together.jpg</b></small></div>
- <button class="primary next">I made you a letter →</button>
-</section>
-<section class="chapter" data-title="My letter">
- <div class="eyebrow">CHAPTER FIVE</div><h2>A letter for <em>my favourite girl.</em></h2>
- <button class="letter-seal" id="letterBtn" aria-expanded="false">♡<span>Tap to unfold your letter</span></button>
- <article class="letter" id="letter">
-  <p>My dearest BabyJennie,</p>
-  <p>Happy Birthday, my love. After 6 years and 8 months together, I still find myself looking at you and thinking about how lucky I am that our lives crossed paths.</p>
-  <p>We started knowing each other in secondary school, and somehow our story continued all the way into university. We've grown up together in so many ways. We've celebrated happy moments, faced difficult ones, and made memories that I will carry in my heart.</p>
-  <p>You always look gorgeous to me, Baby — not only because of your beautiful smile, but because of the person you are. I love the little things about you, the way you make ordinary days feel special, and the comfort of knowing that we have each other.</p>
-  <p>I know life will bring more challenges. I cannot promise that every day will be perfect, but I promise to keep putting effort into us, to keep learning how to love you better, and to keep choosing you through every new chapter.</p>
-  <p>I want you to be the woman I build my life with. Step by step, I hope we will keep chasing our dreams, supporting each other, and creating every single memory we can — from the smallest moments to our biggest milestones.</p>
-  <p>On your birthday, I wish you happiness, peace, confidence, and all the beautiful things your heart hopes for. I hope you always know how deeply you are loved.</p>
-  <p>Thank you for being my BabyJennie. If I could choose again, I'd still choose you.</p>
-  <p class="signature">With all my love,<br>Your favourite person ♡</p>
- </article>
- <button class="primary next">One last surprise →</button>
-</section>
-<section class="chapter finale" data-title="Happy birthday">
- <div class="eyebrow">THE MOST IMPORTANT MESSAGE</div><div class="final-heart">♡</div>
- <h1>Happy Birthday,<br><em>BabyJennie!</em></h1>
- <div class="photo round" data-photo="photos/favourite.jpg"><span>♡</span><small>Our favourite photo</small></div>
- <p>Jennifer Chin Yee Lim, no matter how many birthdays come and go, I hope I get to keep celebrating the amazing woman you are.</p>
- <p>From secondary school to university, from our first memories to all the chapters still waiting for us — <strong>my heart chooses you.</strong></p>
- <h2 class="ending">In this lifetime,<br><em>and every next chapter.</em></h2>
-<dialog id="musicDialog">
-  <button id="closeMusic" class="dialog-close" aria-label="Close">×</button>
-  <h3>Our Love Song ♡</h3>
-  <p>A song for BabyJennie ♡</p>
-  <p class="muted">
-    Every moment with you is a memory I treasure.
-    This song reminds me of our beautiful journey together.
-  </p>
-  <a href="https://youtu.be/MftTM0cF9fs"
-     target="_blank"
-     rel="noopener noreferrer">
-    Listen on YouTube ↗
-  </a>
-  <audio id="audio" controls loop preload="none"
-         src="music/our-song.mp3"></audio>
-  <small>Tap Play to listen to our song ♡</small>
-</dialog>
-<script src="script.js"></script>
-</body></html>
+  <div class="glow glow-one"></div>
+  <div class="glow glow-two"></div>
+
+  <header>
+    <span class="brand">J ♡ J</span>
+    <span id="progressLabel">A little surprise • 1 / 7</span>
+    <button class="iconbtn" id="soundBtn"
+            aria-label="Music options"
+            title="Music options">♫</button>
+  </header>
+
+  <div class="progress">
+    <div id="progressBar"></div>
+  </div>
+
+  <main id="main">
+
+    <!-- CHAPTER 1: OPENING -->
+    <section class="chapter active" data-title="A little surprise">
+      <div class="eyebrow">A LETTER MADE WITH LOVE</div>
+
+      <div class="envelope" id="envelope"
+           role="button" tabindex="0"
+           aria-label="Open the envelope">
+        <span>♡</span>
+      </div>
+
+      <h1>To my <em>BabyJennie</em></h1>
+
+      <p>
+        Jennifer Chin Yee Lim, this year I wanted to do
+        something different. Not just a long birthday
+        message, but a little journey through everything
+        you mean to me.
+      </p>
+
+      <p class="muted">
+        Take your time, Baby. Every page was made for you.
+      </p>
+
+      <button class="primary next">
+        Open your surprise <span>→</span>
+      </button>
+    </section>
+
+    <!-- CHAPTER 2: OUR BEGINNING -->
+    <section class="chapter" data-title="Where it began">
+      <div class="eyebrow">CHAPTER ONE</div>
+
+      <h2>Our story started <em>long ago.</em></h2>
+
+      <div class="photo large" data-photo="photos/school.jpg">
+        <span>♡</span>
+        <small>
+          Our secondary school days<br>
+          <b>Add a photo: photos/school.jpg</b>
+        </small>
+      </div>
+
+      <p>
+        We have known each other since secondary school.
+        Back then, I couldn't have imagined how much of
+        my world you would become.
+      </p>
+
+      <p>
+        From school days to university life, we kept
+        growing, learning, and finding our way — together.
+        And if I could choose where our story began,
+        I'd still choose the path that led me to you.
+      </p>
+
+      <button class="primary next">
+        Keep walking with me →
+      </button>
+    </section>
+
+    <!-- CHAPTER 3: MEMORIES -->
+    <section class="chapter" data-title="Our memories">
+      <div class="eyebrow">CHAPTER TWO</div>
+
+      <h2>
+        6 years, 8 months.<br>
+        <em>Countless little moments.</em>
+      </h2>
+
+      <p>
+        Some memories are big. Others are just ordinary
+        days that became special because you were there.
+      </p>
+
+      <div class="gallery">
+        <button class="photo"
+                data-photo="photos/memory1.jpg"
+                data-caption="Every laugh with you is a favourite memory.">
+          <span>01</span>
+          <small>Our laughter</small>
+        </button>
+
+        <button class="photo"
+                data-photo="photos/memory2.jpg"
+                data-caption="University felt more meaningful because we walked through it together.">
+          <span>02</span>
+          <small>University days</small>
+        </button>
+
+        <button class="photo"
+                data-photo="photos/memory3.jpg"
+                data-caption="Even the simplest moments are beautiful with you.">
+          <span>03</span>
+          <small>Little adventures</small>
+        </button>
+
+        <button class="photo"
+                data-photo="photos/memory4.jpg"
+                data-caption="My favourite place is wherever we get to make memories together.">
+          <span>04</span>
+          <small>Us, always</small>
+        </button>
+      </div>
+
+      <p class="muted">Tap a memory to read a note.</p>
+
+      <button class="primary next">
+        There's more I want to say →
+      </button>
+    </section>
+
+    <!-- CHAPTER 4: WHY I LOVE YOU -->
+    <section class="chapter" data-title="Why you">
+      <div class="eyebrow">CHAPTER THREE</div>
+
+      <h2>
+        All the little reasons<br>
+        <em>I love you.</em>
+      </h2>
+
+      <p>
+        Tap every heart, BabyJennie.
+        Each one is something I never want you to forget.
+      </p>
+
+      <div class="hearts" id="hearts"></div>
+
+      <div class="reveal" id="heartMessage" aria-live="polite">
+        A little love note is waiting for you ♡
+      </div>
+
+      <button class="primary next">
+        One thing I want you to know →
+      </button>
+    </section>
+
+    <!-- CHAPTER 5: THROUGH EVERYTHING -->
+    <section class="chapter" data-title="Through everything">
+      <div class="eyebrow">CHAPTER FOUR</div>
+
+      <h2>Not just on the <em>easy days.</em></h2>
+
+      <div class="quote">
+        “Love is not only about the beautiful moments.
+        It's also about choosing each other when
+        life gets difficult.”
+      </div>
+
+      <p>
+        We've been through good times and bad times.
+        We haven't always had easy days, but through
+        it all, we have had each other.
+      </p>
+
+      <p>
+        Thank you for being by my side, for growing
+        with me, and for being part of the person
+        I am becoming. I want to keep showing up
+        for you, listening to you, and building
+        something lasting with you.
+      </p>
+
+      <div class="photo wide" data-photo="photos/together.jpg">
+        <span>∞</span>
+        <small>
+          Still choosing us<br>
+          <b>photos/together.jpg</b>
+        </small>
+      </div>
+
+      <button class="primary next">
+        I made you a letter →
+      </button>
+    </section>
+
+    <!-- CHAPTER 6: BIRTHDAY LETTER -->
+    <section class="chapter" data-title="My letter">
+      <div class="eyebrow">CHAPTER FIVE</div>
+
+      <h2>
+        A letter for <em>my favourite girl.</em>
+      </h2>
+
+      <button class="letter-seal" id="letterBtn"
+              aria-expanded="false">
+        ♡<span>Tap to unfold your letter</span>
+      </button>
+
+      <article class="letter" id="letter">
+        <p>My dearest BabyJennie,</p>
+
+        <p>
+          Happy Birthday, my love. After 6 years and
+          8 months together, I still find myself
+          looking at you and thinking about how
+          lucky I am that our lives crossed paths.
+        </p>
+
+        <p>
+          We started knowing each other in secondary
+          school, and somehow our story continued
+          all the way into university. We've grown
+          up together in so many ways. We've celebrated
+          happy moments, faced difficult ones, and
+          made memories that I will carry in my heart.
+        </p>
+
+        <p>
+          You always look gorgeous to me, Baby —
+          not only because of your beautiful smile,
+          but because of the person you are.
+          I love the little things about you,
+          the way you make ordinary days feel special,
+          and the comfort of knowing that we have
+          each other.
+        </p>
+
+        <p>
+          I know life will bring more challenges.
+          I cannot promise that every day will be
+          perfect, but I promise to keep putting
+          effort into us, to keep learning how to
+          love you better, and to keep choosing
+          you through every new chapter.
+        </p>
+
+        <p>
+          I want you to be the woman I build my life
+          with. Step by step, I hope we will keep
+          chasing our dreams, supporting each other,
+          and creating every single memory we can —
+          from the smallest moments to our biggest
+          milestones.
+        </p>
+
+        <p>
+          On your birthday, I wish you happiness,
+          peace, confidence, and all the beautiful
+          things your heart hopes for. I hope you
+          always know how deeply you are loved.
+        </p>
+
+        <p>
+          Thank you for being my BabyJennie.
+          If I could choose again, I'd still choose you.
+        </p>
+
+        <p class="signature">
+          With all my love,<br>
+          Your favourite person ♡
+        </p>
+      </article>
+
+      <button class="primary next">
+        One last surprise →
+      </button>
+    </section>
+
+    <!-- CHAPTER 7: FINAL SURPRISE -->
+    <section class="chapter finale" data-title="Happy birthday">
+      <div class="eyebrow">THE MOST IMPORTANT MESSAGE</div>
+      <div class="final-heart">♡</div>
+
+      <h1>
+        Happy Birthday,<br>
+        <em>BabyJennie!</em>
+      </h1>
+
+      <div class="photo round" data-photo="photos/favourite.jpg">
+        <span>♡</span>
+        <small>Our favourite photo</small>
+      </div>
+
+      <p>
+        Jennifer Chin Yee Lim, no matter how many
+        birthdays come and go, I hope I get to
+        keep celebrating the amazing woman you are.
+      </p>
+
+      <p>
+        From secondary school to university,
+        from our first memories to all the
+        chapters still waiting for us —
+        <strong>my heart chooses you.</strong>
+      </p>
+
+      <h2 class="ending">
+        In this lifetime,<br>
+        <em>and every next chapter.</em>
+      </h2>
+
+      <button class="primary" id="surpriseBtn">
+        Tap for your final surprise ♡
+      </button>
+
+      <p id="lastNote" class="hidden-note">
+        I love you, BabyJennie. Here's to a lifetime
+        of little moments, big dreams, and choosing
+        each other. ♡
+      </p>
+
+      <button class="secondary" id="restartBtn">
+        Relive our story ↺
+      </button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <button id="backBtn" class="back" disabled>
+      ← Previous
+    </button>
+    <span>Made with love, just for Jennifer ♡</span>
+  </footer>
+
+  <!-- PHOTO VIEWER -->
+  <dialog id="photoDialog">
+    <button id="closeDialog" class="dialog-close"
+            aria-label="Close">×</button>
+    <div id="dialogImage"></div>
+    <p id="dialogCaption"></p>
+  </dialog>
+
+  <!-- ROMANTIC BACKGROUND MUSIC -->
+  <dialog id="musicDialog">
+    <button id="closeMusic" class="dialog-close"
+            aria-label="Close">×</button>
+
+    <h3>Our Love Song ♡</h3>
+    <p>A song for BabyJennie ♡</p>
+
+    <p class="muted">
+      Every moment with you is a memory I treasure.
+      This song reminds me of our beautiful journey together.
+    </p>
+
+    <a href="https://youtu.be/MftTM0cF9fs"
+       target="_blank"
+       rel="noopener noreferrer">
+      Listen on YouTube ↗
+    </a>
+
+    <audio id="audio"
+           controls
+           loop
+           preload="none"
+           src="music/our-song.mp3">
+    </audio>
+
+    <small>Tap Play to listen to our song ♡</small>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
