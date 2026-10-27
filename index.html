@@ -74,13 +74,22 @@
  <p>Jennifer Chin Yee Lim, no matter how many birthdays come and go, I hope I get to keep celebrating the amazing woman you are.</p>
  <p>From secondary school to university, from our first memories to all the chapters still waiting for us — <strong>my heart chooses you.</strong></p>
  <h2 class="ending">In this lifetime,<br><em>and every next chapter.</em></h2>
- <button class="primary" id="surpriseBtn">Tap for your final surprise ♡</button>
- <p id="lastNote" class="hidden-note">I love you, BabyJennie. Here's to a lifetime of little moments, big dreams, and choosing each other. ♡</p>
- <button class="secondary" id="restartBtn">Relive our story ↺</button>
-</section>
-</main>
-<footer><button id="backBtn" class="back" disabled>← Previous</button><span>Made with love, just for Jennifer ♡</span></footer>
-<dialog id="photoDialog"><button id="closeDialog" class="dialog-close" aria-label="Close">×</button><div id="dialogImage"></div><p id="dialogCaption"></p></dialog>
-<dialog id="musicDialog"><button id="closeMusic" class="dialog-close" aria-label="Close">×</button><h3>Our soundtrack ♫</h3><p>Love Like This — Fujii Kaze</p><p class="muted">To respect music rights, the song is not bundled with this website. You can open it on a music service, or add an audio file you have permission to use.</p><a href="https://www.youtube.com/results?search_query=Fujii+Kaze+Love+Like+This" target="_blank" rel="noopener">Find the song on YouTube ↗</a><audio id="audio" controls loop src="music/our-song.mp3"></audio><small>Optional: add an authorised file at music/our-song.mp3</small></dialog>
+<dialog id="musicDialog">
+  <button id="closeMusic" class="dialog-close" aria-label="Close">×</button>
+  <h3>Our Love Song ♡</h3>
+  <p>A song for BabyJennie ♡</p>
+  <p class="muted">
+    Every moment with you is a memory I treasure.
+    This song reminds me of our beautiful journey together.
+  </p>
+  <a href="https://youtu.be/MftTM0cF9fs"
+     target="_blank"
+     rel="noopener noreferrer">
+    Listen on YouTube ↗
+  </a>
+  <audio id="audio" controls loop preload="none"
+         src="music/our-song.mp3"></audio>
+  <small>Tap Play to listen to our song ♡</small>
+</dialog>
 <script src="script.js"></script>
 </body></html>
