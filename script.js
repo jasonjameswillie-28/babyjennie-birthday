@@ -17,24 +17,43 @@ document.querySelector("#closeDialog").addEventListener("click",()=>photoDialog.
 const musicDialog=document.querySelector("#musicDialog");document.querySelector("#soundBtn").addEventListener("click",()=>musicDialog.showModal());document.querySelector("#closeMusic").addEventListener("click",()=>musicDialog.close());
 goTo(0);
 
-/* BabyJennie's romantic envelope music */
+/* BabyJennie's envelope background music */
 
-const envelopeMusic = document.getElementById("audio");
+const loveSong = document.getElementById("audio");
+const birthdayEnvelope = document.getElementById("envelope");
+const firstSurpriseButton = document.querySelector(
+  ".chapter.active .next"
+);
 
-if (envelopeMusic) {
-  envelopeMusic.loop = true;
+function startBirthdayMusic() {
+  if (!loveSong || !loveSong.paused) return;
 
-  document.addEventListener("click", function (event) {
-    const envelopeButton = event.target.closest(
-      "#openEnvelope, #openBtn, .open-envelope, .envelope"
-    );
+  loveSong.loop = true;
 
-    if (!envelopeButton) return;
-
-    if (envelopeMusic.paused) {
-      envelopeMusic.play().catch(function () {
-        // Music can still be started from the music player.
-      });
-    }
+  loveSong.play().catch(function (error) {
+    console.log("Music could not start:", error);
   });
+}
+
+if (birthdayEnvelope) {
+  birthdayEnvelope.addEventListener(
+    "click",
+    startBirthdayMusic
+  );
+
+  birthdayEnvelope.addEventListener(
+    "keydown",
+    function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        startBirthdayMusic();
+      }
+    }
+  );
+}
+
+if (firstSurpriseButton) {
+  firstSurpriseButton.addEventListener(
+    "click",
+    startBirthdayMusic
+  );
 }
