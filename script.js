@@ -16,3 +16,25 @@ document.querySelectorAll(".photo").forEach(p=>{const path=p.dataset.photo;const
 document.querySelector("#closeDialog").addEventListener("click",()=>photoDialog.close());
 const musicDialog=document.querySelector("#musicDialog");document.querySelector("#soundBtn").addEventListener("click",()=>musicDialog.showModal());document.querySelector("#closeMusic").addEventListener("click",()=>musicDialog.close());
 goTo(0);
+
+/* BabyJennie's romantic envelope music */
+
+const envelopeMusic = document.getElementById("audio");
+
+if (envelopeMusic) {
+  envelopeMusic.loop = true;
+
+  document.addEventListener("click", function (event) {
+    const envelopeButton = event.target.closest(
+      "#openEnvelope, #openBtn, .open-envelope, .envelope"
+    );
+
+    if (!envelopeButton) return;
+
+    if (envelopeMusic.paused) {
+      envelopeMusic.play().catch(function () {
+        // Music can still be started from the music player.
+      });
+    }
+  });
+}
